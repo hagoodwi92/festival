@@ -1,12 +1,12 @@
-require 'rspec'
-require 'festival'
+# require 'rspec'
+# require 'festival'
 
-describe '#Festival' do
+# describe '#Festival' do
 
-describe('#') do
-    it("") do
+# describe('#') do
+#     it("") do
       
-    end
-  end
+#     end
+#   end
 
-end
+# end

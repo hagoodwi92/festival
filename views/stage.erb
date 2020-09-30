@@ -1,0 +1,15 @@
+<h1>Music Festival</h1>
+
+<h3>Available Stages</h3>
+
+<% if @stages.any? %>
+  <ul>
+    <% @stages.each do |stage| %>
+      <li><%= stage.name %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are currently no stages to display.</p>
+<% end %>
+
+<a href="/albums/new">Add a new stage</a>
