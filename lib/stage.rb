@@ -9,7 +9,7 @@ class Stage
     @id = id || @@total_rows += 1
   end
 
-   # clear
+  # clear
   def self.clear
     @@stages = {}
     @@total_rows = 0
