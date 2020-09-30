@@ -1,18 +1,19 @@
 require('sinatra')
 require('sinatra/reloader')
 require('./lib/artist')
+require('./lib/stage')
 require('pry')
 also_reload('lib/**/*.rb')
 
 # "This will be our home page. '/' is always the root route in a Sinatra application."
 get('/') do
   @stages = Stage.all
-  erb(:stage)
+  erb(:stages)
 end
 # "This route will show a list of all stages."
 get('/stages') do
   @stages = Stage.all
-  erb(:stage)
+  erb(:stages)
 end
 
 # "This will take us to a page with a form for adding a new stage."
